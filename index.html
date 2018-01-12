@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>Pick The Lock Game</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="jscript.js"></script>
+	</head>
+	<body>
+		<div class="centrer">
+			<canvas id="mainCanvas" height="500" width="500"></canvas>
+		</div>
+		<script type="text/javascript">
+			// Definir le canvas
+			var canvas = document.getElementById("mainCanvas");
+			// verifier le canvas context
+			if (!canvas.getContext) {
+				// Creer un canvas si aucun n'est trouvé
+				document.body.innerHTML += '<canvas id="mainCanvas"></canvas>';
+			}
+			
+			// Si les canvas sont supportés, commencer les dessin
+			if	(canvas.getContext)	{
+				// Initialiser le jeu;
+				var jeu = new PickTheLock(canvas);
+				// Commencer le jeu
+				jeu.startGame();
+			}			
+		</script>
+	</body>
+</html>

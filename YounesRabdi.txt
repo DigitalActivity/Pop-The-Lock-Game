@@ -1,0 +1,15 @@
+Projet : Pick The Lock Game
+Langage : Javascript
+Par : Younes Rabdi
+
+Features : 
+- Possible de changer la taille du canvas sans affecter le jeu.
+- Les forms sont des litteraux. possible de changer le radius et les couleurs.
+- Il suffit de changer le outerRadius et InnerRadius du donut (cadnas) et le jeu va s'adapter au complet à la nouvelle taille
+	En cas de changement, il faut ajuster la rotation de la balle cible à la ligne 268. 
+	Pour une raison inconnue si je change de trop la taille du donut, 
+	la balle se décale de queluqes degrés clockwise. il faut donc ajuster sa position à la rotation 0
+		pour qu'ensuite le jeu soit precis avec la nouvelle taille.
+		
+Bugs : 
+- Parfoit si trop de pertes successives et rapides, le jeu va accelerer pendant un tour (raison inconnue)

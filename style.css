@@ -1,0 +1,18 @@
+/***
+* Fichier CSS du projet - Pick The Lock Game
+*
+* Rabdi Younes 0821450
+*/
+
+/* style Canvas primaire */
+#mainCanvas {
+	border : solid 2px #708090;
+	margin:auto;
+	background: #7FFFD4; 
+}
+
+/* Div contenant le canvas principal */
+.centrer {
+	margin : 20px;
+    text-align:center;
+}
